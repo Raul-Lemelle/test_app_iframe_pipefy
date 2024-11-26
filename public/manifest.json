@@ -1,0 +1,8 @@
+{
+    "name": "Iframe Viewer",
+    "description": "Exibe uma página externa como iframe",
+    "init_url": "https://seu-dominio.com/index.html",
+    "icon_url": "https://seu-dominio.com/icon.png",
+    "permissions": []
+  }
+  
