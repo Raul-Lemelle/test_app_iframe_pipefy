@@ -2,11 +2,11 @@
   "name": "Iframe Viewer App",
   "short_description": "Exibe uma aba personalizada no card.",
   "description": "Adiciona um botão no card que exibe um iframe.",
-  "icon": "https://raul-lemelle.github.io/test_app_iframe_pipefy/icon.png",
+  "icon": "https://test-app-iframe-pipefy.onrender.com/icon.png",
   "author": "RLEMELLE",
-  "init_url": "http://localhost:3000",
+  "init_url": "https://test-app-iframe-pipefy.onrender.com/index.html",
   "screenshots": [
-    "https://raul-lemelle.github.io/test_app_iframe_pipefy/screenshots.png"
+    "https://test-app-iframe-pipefy.onrender.com/screenshots.png"
   ],
   "features": ["card-buttons"]
 }
