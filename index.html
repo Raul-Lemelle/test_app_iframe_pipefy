@@ -3,33 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Card Tab Example</title>
+  <title>Card Button with iFrame</title>
   <script src="https://platform.staticpipefy.com/pipefy-app.js"></script>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    .iframe-container {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-  </style>
 </head>
 <body>
   <script>
-    // Inicializa o App Pipefy
+    // Inicializa o Pipefy App
     PipefyApp.initCall({
-      'card-tab': (p, pipe) => {
-        return {
-          title: 'Custom Tab',
-          icon: 'https://raul-lemelle.github.io/test_app_iframe_pipefy/icon.png', // URL para o ícone da aba
-          url: 'https://portal-galapagoscapital-dev.sydle.com/home', // Página a ser exibida no iframe
-          display: 'iframe' // Define que será exibido como iframe
-        };
+      'card-buttons': function(p, pipe) {
+        // Configura o botão no card
+        return [
+          {
+            icon: './icon.png', // Ícone do botão
+            text: 'Abrir iFrame', // Texto do botão
+            callback: function(p) {
+              // Exibe o modal com o iframe
+              p.modal({
+                title: 'My iFrame', // Título do modal
+                url: 'https://portal-galapagoscapital-dev.sydle.com/home', // URL do iFrame
+                height: '300px', // Altura do modal
+                width: '500px' // Largura do modal
+              });
+            }
+          }
+        ];
       }
     });
   </script>
