@@ -3,18 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pipefy Iframe App</title>
+  <title>Card Tab Example</title>
+  <script src="https://platform.staticpipefy.com/pipefy-app.js"></script>
   <style>
     body {
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #f5f5f5;
     }
-    iframe {
+
+    .iframe-container {
       width: 100%;
       height: 100%;
       border: none;
@@ -22,6 +20,18 @@
   </style>
 </head>
 <body>
-  <iframe src="https://portal-galapagoscapital-dev.sydle.com/home"></iframe> <!-- Altere para a URL desejada -->
+  <script>
+    // Inicializa o App Pipefy
+    PipefyApp.initCall({
+      'card-tab': (p, pipe) => {
+        return {
+          title: 'Custom Tab',
+          icon: 'https://raul-lemelle.github.io/test_app_iframe_pipefy/icon.png', // URL para o ícone da aba
+          url: 'https://portal-galapagoscapital-dev.sydle.com/home', // Página a ser exibida no iframe
+          display: 'iframe' // Define que será exibido como iframe
+        };
+      }
+    });
+  </script>
 </body>
 </html>

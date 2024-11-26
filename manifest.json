@@ -1,16 +1,13 @@
   {
     "name": "Iframe Viewer App",
-    "short_description": "Exibe um iframe em um card ou pipe.",
-    "description": "Este app permite exibir um iframe personalizado diretamente no Pipefy, facilitando a integração com páginas externas.",
+    "short_description": "Exibe uma aba personalizada no card.",
+    "description": "Adiciona uma aba no card que exibe um iframe.",
     "icon": "https://raul-lemelle.github.io/test_app_iframe_pipefy/icon.png",
     "author": "RLEMELLE",
     "init_url": "https://raul-lemelle.github.io/test_app_iframe_pipefy/index.html",
     "screenshots": [
       "https://seu-usuario.github.io/pipefy-iframe-app/icon.png"
     ],
-    "features": [
-      "pipe-buttons",
-      "card-tab"
-    ]
+    "features": ["card-tab"]
   }
   
