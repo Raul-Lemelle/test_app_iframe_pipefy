@@ -1,8 +1,8 @@
 {
     "name": "Iframe Viewer",
-    "description": "Exibe uma página externa como iframe",
-    "init_url": "https://seu-dominio.com/index.html",
-    "icon_url": "https://seu-dominio.com/icon.png",
+    "description": "IFRAME APP",
+    "init_url": "https://raul-lemelle.github.io/test_app_iframe_pipefy/",
+    "icon_url": "https://i.postimg.cc/MZfkkHc9/icon.png",
     "permissions": []
   }
   
