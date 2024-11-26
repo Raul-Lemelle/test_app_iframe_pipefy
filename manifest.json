@@ -4,9 +4,9 @@
     "description": "Adiciona uma aba no card que exibe um iframe.",
     "icon": "https://raul-lemelle.github.io/test_app_iframe_pipefy/icon.png",
     "author": "RLEMELLE",
-    "init_url": "./",
+    "init_url": "https://raul-lemelle.github.io/test_app_iframe_pipefy/index.html",
     "screenshots": [
-      "https://seu-usuario.github.io/pipefy-iframe-app/icon.png"
+      "https://raul-lemelle.github.io/test_app_iframe_pipefy/screenshots.png"
     ],
     "features": ["card-tab"]
   }
