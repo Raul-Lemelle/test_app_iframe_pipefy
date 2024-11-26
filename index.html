@@ -11,18 +11,17 @@
     // Inicializa o Pipefy App
     PipefyApp.initCall({
       'card-buttons': function(p, pipe) {
-        // Retorna os botões do card
         return [
           {
-            icon: './icon.png', // Caminho para o ícone do botão
+            icon: 'https://raul-lemelle.github.io/test_app_iframe_pipefy/icon.png', // Caminho para o ícone
             text: 'Abrir iFrame', // Texto do botão
             callback: function(p) {
               // Ação ao clicar no botão: Exibe o modal com iFrame
               p.modal({
                 title: 'Visualização do iFrame',
-                url: 'https://portal-galapagoscapital-dev.sydle.com/home', // Substitua pela URL do iFrame
-                height: '300px', // Altura do modal
-                width: '500px' // Largura do modal
+                url: 'https://portal-galapagoscapital-dev.sydle.com/home', // URL estática do iFrame
+                height: '400px', // Altura do modal (corrigido)
+                width: '600px'  // Largura do modal (corrigido)
               });
             }
           }
