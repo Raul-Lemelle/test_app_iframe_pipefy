@@ -1,13 +1,12 @@
-  {
-    "name": "Iframe Viewer App",
-    "short_description": "Exibe uma aba personalizada no card.",
-    "description": "Adiciona um botão no card que exibe um iframe.",
-    "icon": "https://raul-lemelle.github.io/test_app_iframe_pipefy/icon.png",
-    "author": "RLEMELLE",
-    "init_url": "https://raul-lemelle.github.io/test_app_iframe_pipefy/index.html",
-    "screenshots": [
-      "https://raul-lemelle.github.io/test_app_iframe_pipefy/screenshots.png"
-    ],
-    "features": ["card-buttons"]
-  }
-  
+{
+  "name": "Iframe Viewer App",
+  "short_description": "Exibe uma aba personalizada no card.",
+  "description": "Adiciona um botão no card que exibe um iframe.",
+  "icon": "https://raul-lemelle.github.io/test_app_iframe_pipefy/icon.png",
+  "author": "RLEMELLE",
+  "init_url": "http://localhost:3000",
+  "screenshots": [
+    "https://raul-lemelle.github.io/test_app_iframe_pipefy/screenshots.png"
+  ],
+  "features": ["card-buttons"]
+}
