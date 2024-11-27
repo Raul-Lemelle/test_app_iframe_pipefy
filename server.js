@@ -1,30 +1,31 @@
-const express = require('express');
-const cors = require('cors');
-const path = require('path');
+import express from 'express';
 
+const compression = require('compression');
+const cors = require('cors');
 const app = express();
 
-// Configuração de CORS para permitir requisições do Pipefy
-app.use(cors({
-  origin: 'https://app.pipefy.com', // Domínio do Pipefy
-  methods: ['GET', 'POST'],
-}));
+// Enable Compression
+app.use(compression());
 
-// Servir arquivos estáticos da pasta public
-app.use(express.static(path.join(__dirname, 'public')));
+// Enable CORS
+app.use(cors({ origin: '*' }));
 
-// Rota para servir o manifest.json diretamente da raiz
-app.get('/manifest.json', (req, res) => {
-  res.sendFile(path.join(__dirname, 'manifest.json'));
+// http://expressjs.com/en/starter/static-files.html
+app.use(express.static('public'));
+
+
+app.get('/', (request, response) => {
+  response.sendFile(`${__dirname}/views/index.html`);
 });
 
-// Rota principal para servir o index.html
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+app.get('/manifest.json', (request, response) => {
+  response.sendFile(`${__dirname}/views/manifest.json`);
 });
 
-// Porta para o servidor
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Servidor rodando em http://localhost:${PORT}`);
+app.get('/view.html', (request, response) => {
+  response.sendFile(`${__dirname}/views/pipe-view.html`);
+});
+
+const listener = app.listen(process.env.PORT, () => {
+  console.log(`Your app is listening on port ${listener.address().port}. 🚢`);
 });

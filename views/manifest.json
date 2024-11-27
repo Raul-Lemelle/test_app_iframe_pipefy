@@ -8,5 +8,8 @@
   "screenshots": [
     "https://coal-recondite-web.glitch.me/screenshots.png"
   ],
-  "features": ["iframe"]
+  "features": [
+    "pipe-view",
+    "card-buttons"
+  ]
 }
