@@ -1,79 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Card Button iFrame</title>
-  <script src="https://platform.staticpipefy.com/pipefy-app.js"></script>
+  <title>Meu App</title>
+  <meta charset="utf-8">
   <style>
-    /* Estilo básico para o card */
-    .card-container {
-      max-width: 400px;
-      margin: 50px auto;
-      padding: 20px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      font-family: Arial, sans-serif;
-    }
-
-    .card-header {
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    .card-body {
-      font-size: 1rem;
-      margin-bottom: 20px;
-    }
-
-    .card-footer {
-      text-align: right;
-    }
-
-    .open-modal-button {
-      padding: 10px 15px;
-      font-size: 1rem;
-      color: #fff;
-      background-color: #007bff;
+    iframe {
+      width: 100%;
+      height: 100vh; /* Ou ajuste conforme necessário */
       border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    .open-modal-button:hover {
-      background-color: #0056b3;
     }
   </style>
 </head>
 <body>
-  <div class="card-container">
-    <div class="card-header">
-      Abrir iFrame
-    </div>
-    <div class="card-body">
-      Clique no botão abaixo para visualizar o conteúdo no iFrame.
-    </div>
-    <div class="card-footer">
-      <button class="open-modal-button" onclick="openModal()">Abrir iFrame</button>
-    </div>
-  </div>
-
-  <script>
-    // Inicializa o Pipefy App
-    PipefyApp.initCall();
-
-    // Função para abrir o modal com o iFrame
-    function openModal() {
-      PipefyApp.modal({
-        title: 'Visualização do iFrame',
-        url: 'https://portal-galapagoscapital-dev.sydle.com/home', // URL estática do iFrame
-        height: '70vh', // Altura do modal
-        width: '80vw'  // Largura do modal
-      });
-    }
-  </script>
+  <iframe src="https://portal-galapagoscapital-dev.sydle.com/home" title="Site Externo"></iframe>
 </body>
 </html>

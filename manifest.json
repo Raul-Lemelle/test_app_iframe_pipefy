@@ -1,12 +1,12 @@
 {
   "name": "Iframe Viewer App",
-  "short_description": "Exibe uma aba personalizada no card.",
-  "description": "Adiciona um botão no card que exibe um iframe.",
+  "short_description": "Carrega um site externo dentro do Pipefy.",
+  "description": "Este app permite integrar um site diretamente no Pipefy para uma experiência de uso integrada.",
   "icon": "https://coal-recondite-web.glitch.me/icon.png",
   "author": "RLEMELLE",
   "init_url": "https://coal-recondite-web.glitch.me/index.html",
   "screenshots": [
     "https://coal-recondite-web.glitch.me/screenshots.png"
   ],
-  "features": ["card-buttons"]
+  "features": ["iframe"]
 }
