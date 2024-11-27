@@ -2,11 +2,11 @@
   "name": "Iframe Viewer App",
   "short_description": "Exibe uma aba personalizada no card.",
   "description": "Adiciona um botão no card que exibe um iframe.",
-  "icon": "https://shaded-caring-zebu.glitch.me/icon.png",
+  "icon": "https://coal-recondite-web.glitch.me/icon.png",
   "author": "RLEMELLE",
-  "init_url": "https://shaded-caring-zebu.glitch.me/index.html",
+  "init_url": "https://coal-recondite-web.glitch.me/index.html",
   "screenshots": [
-    "https://shaded-caring-zebu.glitch.me/screenshots.png"
+    "https://coal-recondite-web.glitch.me/screenshots.png"
   ],
   "features": ["card-buttons"]
 }
