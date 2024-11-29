@@ -1,0 +1,13 @@
+{
+  "name": "Iframe App",
+  "short_description": "G-GED dentro do Pipe.",
+  "description": "Usado para exibir um Iframe dentro do Pipe, mantendo a governança dos dados do G-GED.",
+  "icon": "https://raul-lemelle.github.io/test_app_iframe_pipefy/public/icon.png",
+  "author": "RLEMELLE",
+  "init_url": "./",
+  "screenshots": ["https://raul-lemelle.github.io/test_app_iframe_pipefy/public/screenshots.png"],
+  "features": [
+    "pipe-view",
+    "card-buttons"
+  ]
+}

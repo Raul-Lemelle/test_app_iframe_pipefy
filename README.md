@@ -1,14 +1,60 @@
-LINK: https://glitch.com/edit/#!/garnet-rune-tangelo?path=server.js%3A32%3A0
+# HelloPipefy Sample App
 
+This is a sample application that integrates Pipefy using React and Pipefy's SDK.
 
-React/Babel/Webpack Boilerplate
-Hello friends! This project is set up and ready to go with React, webpack, and Babel. It will take care of fun stuff like supporting the latest and greatest ECMAScript features, compiling your JSX to JavaScript, and more.
+## Application Setup
 
-You can require CSS files in your components and everything will work as expected.
+To run the application locally, use the following commands:
 
-Getting Off the Ground
-The root of the project is in client/index.js. You can require other files from here. webpack will rebuild your project whenever you make a change. So, there is no need to refresh.
+```sh
+npm install
+npm run dev
+```
 
-Your server also supports the latest and greatest versions of the JavaScript programming language. If you'd prefer not to run it through Babel, then you can go ahead and change babel-register back to node in your package.json.
+Open your browser and navigate to http://localhost:3000 to see the application in action.
 
-Other than that, all batteries are included and you're ready to go!
+## Publishing your application
+
+Once you have finished coding, you'll need to build the code and publish it to your desired hosting service.
+
+Use the following command to generate the final code you'll need to upload:
+
+```sh
+npm run build
+```
+
+Once finished, a folder called `dist` will be created. You should upload only the contents of that folder to your desired hosting server.
+
+You can also use the command below to preview how your application would look in a production build while watching for changes in your code:
+
+```sh
+npm run preview
+```
+
+Check Vite's documentation for options to deploy your project to the web: [https://vitejs.dev/guide/static-deploy.html#deploying-a-static-site](https://vitejs.dev/guide/static-deploy.html#deploying-a-static-site)
+
+## Technologies
+
+This app was built using the following technologies:
+
+- [React](https://react.dev/), a modern JavaScript library to build reusable components;
+- [react-router-dom](https://reactrouter.com/en/main/start/overview#client-side-routing), a library to create routes on the client side;
+- [Vite](https://vitejs.dev/), a build tool that allows fast local development and code transformation for production builds.
+
+## File Descriptions
+
+### [src/index.jsx](src/index.jsx)
+
+This is where your application routes will be created.
+
+You'll need to create a new route for each new feature you want to create.
+
+### [src/routes/Main.jsx](src/routes/Main.jsx)
+
+This is the main application component, and it is where you'll add the features your application will use.
+
+See: https://developers.pipefy.com/docs/features
+
+### [src/routes/CardTab.jsx](src/routes/CardTab.jsx)
+
+This component represents a specific route in the application. It is used to display content related to the [card tab feature](https://developers.pipefy.com/docs/card-tab).
