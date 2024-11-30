@@ -19,8 +19,20 @@ export function PipeView() {
 
   return (
     <div className="pipe-view-content">
-      <h1>TEST_IFRAME_ON_PIPE</h1>
-      <iframe src="https://portal-galapagoscapital-dev.sydle.com/listagem-de-arquivos-com-busca" />
+      <iframe
+        src="https://portal-galapagoscapital-dev.sydle.com/listagem-de-arquivos-com-busca"
+        style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100vw',
+          height: '100vh',
+          border: 'none',
+          margin: 0,
+          zIndex: 1000 // para garantir que o iframe esteja acima de outros elementos
+        }}
+        title="Embedded Site"
+      />
     </div>
   );
 }

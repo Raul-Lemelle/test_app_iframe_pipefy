@@ -16,7 +16,7 @@ export function Main() {
         'card-tab': function () {
           return {
             title: 'G-GED',
-            icon: './logo_glp.png',
+            icon: 'https://raul-lemelle.github.io/test_app_iframe_pipefy/public/logo_favicon.ico',
             url: 'card-tab', //this is the route alias you created inside the src/index.jsx file
             buttons: [],
           };
@@ -40,7 +40,7 @@ export function Main() {
         },
         'pipe-view': function () {
           return {
-            icon: './logo_glp.png',
+            icon: '.https://raul-lemelle.github.io/test_app_iframe_pipefy/public/logo_favicon.ico',
             text: 'G-GED',
             url: 'pipe-view',
           };
@@ -49,7 +49,7 @@ export function Main() {
           return [
             {
               icon: './pfy.png',
-              text: 'Hello Card-button-dropdown',
+              text: 'BTN_DROP',
               callback: (p) => {
                 /**
                  * Opens a dropdown when the button is clicked.
