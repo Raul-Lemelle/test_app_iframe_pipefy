@@ -16,7 +16,7 @@ export function Main() {
         'card-tab': function () {
           return {
             title: 'G-GED',
-            icon: 'https://raul-lemelle.github.io/test_app_iframe_pipefy/public/logo_favicon.ico',
+            icon: 'https://raul-lemelle.github.io/test_app_iframe_pipefy/public/logo_glp.ico',
             url: 'card-tab', //this is the route alias you created inside the src/index.jsx file
             buttons: [],
           };
@@ -40,7 +40,7 @@ export function Main() {
         },
         'pipe-view': function () {
           return {
-            icon: '.https://raul-lemelle.github.io/test_app_iframe_pipefy/public/logo_favicon.ico',
+            icon: 'https://raul-lemelle.github.io/test_app_iframe_pipefy/public/logo_glp.ico',
             text: 'G-GED',
             url: 'pipe-view',
           };
@@ -48,14 +48,14 @@ export function Main() {
         'card-buttons': function () {
           return [
             {
-              icon: './pfy.png',
+              icon: 'https://raul-lemelle.github.io/test_app_iframe_pipefy/public/logo_glp.ico',
               text: 'BTN_DROP',
               callback: (p) => {
                 /**
                  * Opens a dropdown when the button is clicked.
                  */
                 p.dropdown({
-                  title: 'Hello Card-button-dropdown',
+                  title: 'BTN_DROP',
                   items: [
                     /**
                      * The list of items that will be shown when the button is clicked

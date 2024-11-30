@@ -43,7 +43,6 @@ export function CardTab() {
 
   return (
     <>
-      {/* Adicionando o iframe */}
       <iframe
         src="https://portal-galapagoscapital-dev.sydle.com/listagem-de-arquivos-com-busca"
         width="100%"
@@ -51,6 +50,25 @@ export function CardTab() {
         style={{ border: 'none', marginTop: '0px' }}
         title="Embedded Site"
       ></iframe>
+      <br></br><br></br>
+      <ul>
+        <li>
+          This card ID: <strong>{cardId}</strong>
+        </li>
+        <li>
+          This card Title: <strong>{cardTitle}</strong>
+        </li>
+      </ul>
+      <p>Current logged in user data:</p>
+      {userData && (
+        <>
+          <p>
+            The current logged in user is:
+            <img width="20px" height="20px" src={userData.avatarUrl} alt={`${userData.name} avatar`} />
+            <strong>{userData.name}</strong>
+          </p>
+        </>
+      )}
     </>
   );
 }
